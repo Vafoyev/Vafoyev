@@ -1,98 +1,120 @@
 <div align="center">
 
 <a href="https://github.com/Isobek">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=800&lines=Hi+there,+I'm+Isobek+👋;Embedded+Systems+%26+Mobile+Architect+🚀;Building+Smart+Drone+Ecosystems+🚁;Bridging+C%2B%2B,+Flutter+%26+Algorithms+🧠" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=26&duration=3000&pause=1000&color=2196F3&center=true&vCenter=true&width=800&lines=Hi+there,+I'm+Isobek;Embedded+Systems+%26+Mobile+Architect;Building+Hard-Real-Time+Drone+Systems;C%2B%2B+%7C+Flutter+%7C+Algorithms" alt="Typing SVG" />
 </a>
 
 <br/>
 
-<h3>🚀 Bridging Hardware & Software</h3>
-<p style="font-size: 16px; max-width: 600px;">
-I am a <b>Software Engineer</b> specializing in <b>Hard-Real-Time Drone Control Systems</b>. <br>
-I architect the complete data flow: from <b>Embedded Sensors (ESP32/C++)</b> to <b>Cross-Platform Interfaces (Flutter)</b> using advanced SDKs.
+<h3 style="border-bottom: 3px solid #2196F3; display: inline-block; color: #ffffff;">
+    SYSTEM ARCHITECT PROFILE
+</h3>
+<p style="font-size: 16px; max-width: 650px; color: #b0b0b0; line-height: 1.6;">
+    <b>Software Engineer</b> specializing in complex <b>IoT & Drone Telemetry</b>. <br>
+    Bridging the gap between <b>Hardware (ESP32/C++)</b> and <b>Mobile Interfaces (Flutter)</b> using custom protocols and industrial SDKs.
 </p>
 
 <br/>
 
-<table border="0" width="100%">
-  <tr>
-    <td align="center" width="33%">
-      <h3>📱 Mobile & SDKs</h3>
-      <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" />
-      <br/>
-      <img src="https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" />
-      <br/>
-      <img src="https://img.shields.io/badge/Kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white" />
-      <br/>
-      <img src="https://img.shields.io/badge/DJI_SDK-FF6600?style=for-the-badge&logo=dji&logoColor=white" />
-      <br/>
-      <img src="https://img.shields.io/badge/MyID_Auth-FF0000?style=for-the-badge" />
-    </td>
-    <td align="center" width="33%">
-      <h3>🚁 Hardware & IoT</h3>
-      <img src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-      <br/>
-      <img src="https://img.shields.io/badge/ESP32-%23E7352C.svg?style=for-the-badge&logo=espressif&logoColor=white" />
-      <br/>
-      <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" />
-      <br/>
-      <img src="https://img.shields.io/badge/Sensors-Gyro_|_Gas-orange?style=for-the-badge" />
-      <br/>
-      <img src="https://img.shields.io/badge/Protocols-UDP_|_MavLink-lightgrey?style=for-the-badge" />
-    </td>
-    <td align="center" width="33%">
-      <h3>🧠 Core & Algos</h3>
-      <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
-      <br/>
-      <img src="https://img.shields.io/badge/LeetCode-Top_199-yellow?style=for-the-badge&logo=leetcode&logoColor=black" />
-      <br/>
-      <img src="https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white" />
-      <br/>
-      <img src="https://img.shields.io/badge/Architecture-Clean_Arch-blueviolet?style=for-the-badge" />
-      <br/>
-      <img src="https://img.shields.io/badge/Tools-Figma_|_Draw.io-purple?style=for-the-badge" />
-    </td>
-  </tr>
+<table border="0" width="100%" cellspacing="0" cellpadding="10">
+  <thead>
+    <tr>
+      <th align="center" width="33%">
+        <img src="https://img.shields.io/badge/MOBILE_DEVELOPMENT-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+      </th>
+      <th align="center" width="33%">
+        <img src="https://img.shields.io/badge/HARDWARE_&_IoT-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
+      </th>
+      <th align="center" width="33%">
+        <img src="https://img.shields.io/badge/CORE_ENGINEERING-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <br/>
+        <img src="https://img.shields.io/badge/Flutter-Framework-02569B?style=flat-square&logo=flutter&logoColor=white" /><br/>
+        <img src="https://img.shields.io/badge/Dart-Language-0175C2?style=flat-square&logo=dart&logoColor=white" /><br/>
+        <img src="https://img.shields.io/badge/Kotlin-Android-7F52FF?style=flat-square&logo=kotlin&logoColor=white" /><br/>
+        <img src="https://img.shields.io/badge/DJI_SDK-Enterprise-black?style=flat-square&logo=dji&logoColor=white" /><br/>
+        <img src="https://img.shields.io/badge/MyID-Biometrics-red?style=flat-square" />
+      </td>
+      <td align="center" valign="top">
+        <br/>
+        <img src="https://img.shields.io/badge/C++-Embedded-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" /><br/>
+        <img src="https://img.shields.io/badge/ESP32-SoC-E7352C?style=flat-square&logo=espressif&logoColor=white" /><br/>
+        <img src="https://img.shields.io/badge/Arduino-Platform-00979D?style=flat-square&logo=arduino&logoColor=white" /><br/>
+        <img src="https://img.shields.io/badge/Sensors-MPU6050_|_MQ2-orange?style=flat-square" /><br/>
+        <img src="https://img.shields.io/badge/Protocol-UDP_|_MavLink-lightgrey?style=flat-square" />
+      </td>
+      <td align="center" valign="top">
+        <br/>
+        <img src="https://img.shields.io/badge/Java-Algorithms-ED8B00?style=flat-square&logo=openjdk&logoColor=white" /><br/>
+        <img src="https://img.shields.io/badge/LeetCode-199_Solved-yellow?style=flat-square&logo=leetcode&logoColor=black" /><br/>
+        <img src="https://img.shields.io/badge/Git-Control-F05032?style=flat-square&logo=git&logoColor=white" /><br/>
+        <img src="https://img.shields.io/badge/Architecture-Clean-blueviolet?style=flat-square" /><br/>
+        <img src="https://img.shields.io/badge/Design-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 <br/>
 
-<h3>🏗 System Architecture Visualization</h3>
-<i>Data flow from Hardware Sensors to Mobile Interface</i>
+
+<h3 style="color: #ffffff; border-left: 5px solid #2ecc71; padding-left: 10px; display: inline-block;">
+    SYSTEM ARCHITECTURE
+</h3>
+<br/>
+<i style="color: #888888;">Data Flow Pipeline: Sensors -> Controller -> Mobile App</i>
 </div>
 
 ```mermaid
 graph LR
-    %% 1. RANGLARNI SOZLASH
-    classDef hardware fill:#e74c3c,stroke:#333,stroke-width:2px,color:white;
-    classDef mobile fill:#3498db,stroke:#333,stroke-width:2px,color:white;
-    classDef native fill:#9b59b6,stroke:#333,stroke-width:2px,color:white;
-    classDef sdk fill:#2ecc71,stroke:#333,stroke-width:2px,color:white;
-    classDef auth fill:#f1c40f,stroke:#333,stroke-width:2px,color:black;
+    %% 1. TUGUNLAR (TEXT ONLY - NO EMOJIS)
+    %% Shakllar: [] = Rectangle, () = Rounded, {} = Rhombus, [()] = Database
+    
+    A["HARDWARE UNIT<br/>(Drone Frame)"]
+    B[("ESP32 CONTROLLER<br/>(C++ Logic)")]
+    C{"MOBILE APP<br/>(Flutter UI)"}
+    D["NATIVE BRIDGE<br/>(Kotlin/Android)"]
+    E["FLIGHT CONTROL<br/>(DJI SDK)"]
+    F["AUTH SERVICE<br/>(MyID)"]
 
-    %% 2. TUGUNLARNI YARATISH (QUOTES BILAN)
-    A["🚁 Hardware / Drone"]:::hardware
-    B["📡 ESP32 / Controller"]:::hardware
-    C{"📱 Mobile App (Flutter)"}:::mobile
-    D["🤖 Native Android (Kotlin)"]:::native
-    E["🎮 Flight Control (DJI SDK)"]:::sdk
-    F["🔐 Biometrics (MyID)"]:::auth
+    %% 2. BOG'LANISHLAR
+    A -->|Raw Sensor Data| B
+    B == "UDP / MavLink" ==> C
+    C -. "MethodChannel" .-> D
+    D -->|Commands| E
+    C -- "Verify User" --> F
 
-    %% 3. BOG'LANISHLAR
-    A -->| "Sensors Data (C++)" | B
-    B -->| "MavLink / UDP" | C
-    C -->| "Platform Channels" | D
-    D -->| "Control Commands" | E
-    C -->| "Auth Check" | F
+    %% 3. PROFESSIONAL STYLES (FLAT COLORS)
+    classDef hardware fill:#E7352C,stroke:#B71C1C,stroke-width:0px,color:white,font-weight:bold;
+    classDef mobile fill:#02569B,stroke:#01579B,stroke-width:0px,color:white,font-weight:bold;
+    classDef native fill:#7F52FF,stroke:#4A148C,stroke-width:0px,color:white,font-weight:bold;
+    classDef sdk fill:#00C853,stroke:#1B5E20,stroke-width:0px,color:white,font-weight:bold;
+    classDef auth fill:#FFD600,stroke:#F57F17,stroke-width:0px,color:black,font-weight:bold;
+
+    %% 4. ASSIGN STYLES
+    class A,B hardware;
+    class C mobile;
+    class D native;
+    class E sdk;
+    class F auth;
 <div align="center">
 <br/>
-<table>
+<table border="0">
 <tr>
 <td>
-<img src="https://github-readme-stats.vercel.app/api?username=SIZNING_GITHUB_USERNAME&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117" height="180" alt="github stats" />
+<a href="https://github.com/Isobek">
+<img src="https://github-readme-stats.vercel.app/api?username=SIZNING_USERNAME&show_icons=true&theme=transparent&hide_border=true&title_color=2196F3&text_color=b0b0b0&icon_color=2196F3" height="160" alt="github stats" />
+</a>
 </td>
 <td>
-<img src="https://leetcard.jacoblin.cool/SIZNING_LEETCODE_NICK?theme=dark&font=Inter&ext=heatmap" height="180" alt="leetcode stats" />
+<a href="https://leetcode.com/SIZNING_LEETCODE_NICK">
+<img src="https://leetcard.jacoblin.cool/SIZNING_LEETCODE_NICK?theme=dark&font=Inter&ext=heatmap" height="160" alt="leetcode stats" />
+</a>
 </td>
 </tr>
 </table>
