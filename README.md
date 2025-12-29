@@ -29,10 +29,9 @@ I specialize in building **Hard-Real-Time Drone Control Systems**. I don't just 
 ### 🧠 System Architecture Visualization
 *How I build Drone Control Systems:*
 
-```mermaid
 graph LR
-    A[Hardware / Drone] -->|Sensors Data (C++)| B(ESP32 / Controller)
-    B -->|MavLink / UDP| C{Mobile App (Flutter)}
-    C -->|Platform Channels| D[Native Android (Kotlin)]
-    D -->|DJI / Autel SDK| E[Flight Control]
-    C -->|Biometrics| F[MyID Auth]
+    A["Hardware / Drone"] -->| "Sensors Data (C++)" | B("ESP32 / Controller")
+    B -->| "MavLink / UDP" | C{"Mobile App (Flutter)"}
+    C -->| "Platform Channels" | D["Native Android (Kotlin)"]
+    D -->| "DJI / Autel SDK" | E["Flight Control"]
+    C -->| "Biometrics" | F["MyID Auth"]
