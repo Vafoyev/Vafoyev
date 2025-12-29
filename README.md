@@ -1,18 +1,23 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=Hi+there,+I'm+Isobek+👋;Embedded+Systems+%26+Mobile+Architect;Building+Smart+Drone+Ecosystems+🚁;Bridging+C%2B%2B,+Flutter+%26+Algorithms" alt="Typing SVG" />
+<!-- 1. HEADER - JONLI ANIMATSIYA -->
+<a href="https://github.com/Isobek">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=800&lines=Hi+there,+I'm+Isobek+👋;Embedded+Systems+%26+Mobile+Architect+🚀;Building+Smart+Drone+Ecosystems+🚁;Bridging+C%2B%2B,+Flutter+%26+Algorithms+🧠" alt="Typing SVG" />
+</a>
 
 <br/>
 
+<!-- 2. PROFESSIONAL BIO -->
 <h3>🚀 Bridging Hardware & Software</h3>
-<p>
+<p style="font-size: 16px; max-width: 600px;">
 I am a <b>Software Engineer</b> specializing in <b>Hard-Real-Time Drone Control Systems</b>. <br>
-My passion lies in architecting the complete data flow: from <b>Embedded Sensors (ESP32/C++)</b> to <b>Cross-Platform Interfaces (Flutter)</b> using advanced SDKs.
+I architect the complete data flow: from <b>Embedded Sensors (ESP32/C++)</b> to <b>Cross-Platform Interfaces (Flutter)</b> using advanced SDKs.
 </p>
 
 <br/>
 
-<table>
+<!-- 3. TEXNOLOGIYALAR JADVALI (WEBSITE USLUBIDA) -->
+<table border="0" width="100%">
   <tr>
     <td align="center" width="33%">
       <h3>📱 Mobile & SDKs</h3>
@@ -55,19 +60,21 @@ My passion lies in architecting the complete data flow: from <b>Embedded Sensors
 
 <br/>
 
+<!-- 4. ARXITEKTURA DIAGRAMMASI (XATOSIZ VERSIYA) -->
 <h3>🏗 System Architecture Visualization</h3>
 <i>Data flow from Hardware Sensors to Mobile Interface</i>
-
 </div>
 
 ```mermaid
 graph LR
+    %% 1. RANGLARNI SOZLASH
     classDef hardware fill:#e74c3c,stroke:#333,stroke-width:2px,color:white;
     classDef mobile fill:#3498db,stroke:#333,stroke-width:2px,color:white;
     classDef native fill:#9b59b6,stroke:#333,stroke-width:2px,color:white;
     classDef sdk fill:#2ecc71,stroke:#333,stroke-width:2px,color:white;
     classDef auth fill:#f1c40f,stroke:#333,stroke-width:2px,color:black;
 
+    %% 2. TUGUNLARNI YARATISH (QUOTES BILAN)
     A["🚁 Hardware / Drone"]:::hardware
     B["📡 ESP32 / Controller"]:::hardware
     C{"📱 Mobile App (Flutter)"}:::mobile
@@ -75,8 +82,25 @@ graph LR
     E["🎮 Flight Control (DJI SDK)"]:::sdk
     F["🔐 Biometrics (MyID)"]:::auth
 
+    %% 3. BOG'LANISHLAR
     A -->| "Sensors Data (C++)" | B
     B -->| "MavLink / UDP" | C
     C -->| "Platform Channels" | D
     D -->| "Control Commands" | E
     C -->| "Auth Check" | F
+<div align="center">
+<br/>
+<!-- 5. STATISTIKA (O'ZGARTIRISH KERAK BO'LGAN JOY) -->
+<table>
+<tr>
+<td>
+<!-- PASTDA: SIZNING_GITHUB_USERNAME O'RNIGA O'Z NIKINGIZNI YOZING -->
+<img src="https://github-readme-stats.vercel.app/api?username=SIZNING_GITHUB_USERNAME&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117" height="180" alt="github stats" />
+</td>
+<td>
+<!-- PASTDA: SIZNING_LEETCODE_NICK O'RNIGA LEETCODE NIKINGIZNI YOZING -->
+<img src="https://leetcard.jacoblin.cool/SIZNING_LEETCODE_NICK?theme=dark&font=Inter&ext=heatmap" height="180" alt="leetcode stats" />
+</td>
+</tr>
+</table>
+</div>
