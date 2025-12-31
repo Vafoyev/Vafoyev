@@ -265,19 +265,27 @@ graph TB
 </h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Vafoyev&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&count_private=true" alt="GitHub Stats" height="170" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vafoyev&theme=tokyonight&hide_border=true&background=0D1117&stroke=00d9ff&ring=00d9ff&fire=ff9800&currStreakLabel=00d9ff" alt="GitHub Streak" height="170" />
+  <a href="https://github.com/Vafoyev">
+    <img src="https://github-readme-stats.vercel.app/api?username=Vafoyev&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170" />
+  </a>
+  <a href="https://github.com/Vafoyev">
+    <img src="https://streak-stats.demolab.com?user=Vafoyev&theme=tokyonight&hide_border=true&background=0D1117&stroke=00d9ff&ring=00d9ff&fire=ff9800&currStreakLabel=00d9ff&dates=c9d1d9" alt="GitHub Streak" height="170" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vafoyev&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&text_color=c9d1d9&langs_count=8" alt="Top Languages" />
+  <a href="https://github.com/Vafoyev">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vafoyev&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&text_color=c9d1d9&langs_count=10&hide=html,css" alt="Top Languages" height="200" />
+  </a>
 </p>
 
 <br/>
 
 <!-- Activity Graph -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vafoyev&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00d9ff&line=00d9ff&point=ff9800" alt="Contribution Graph" width="95%" />
+  <a href="https://github.com/Vafoyev">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Vafoyev&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00d9ff&line=00d9ff&point=ff9800&area=true&area_color=00d9ff" alt="Contribution Graph" width="95%" />
+  </a>
 </p>
 
 <br/>
