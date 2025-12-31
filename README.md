@@ -1,13 +1,13 @@
 <div align="center">
 
-<a href="https://github.com/Isobek">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=2196F3&center=true&vCenter=true&width=800&lines=Hi+there%2C+I'm+Isobek+%F0%9F%91%8B;Embedded+Systems+%26+Mobile+Architect;Building+Hard-Real-Time+Drone+Systems+%F0%9F%9A%81;C%2B%2B+%7C+Flutter+%7C+Algorithms+%E2%9A%A1" alt="Typing SVG" />
+<a href="https://github.com/Vafoyev">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=2196F3&center=true&vCenter=true&width=800&lines=Hi+there%2C+I'm+Vafoyev+%F0%9F%91%8B;Embedded+Systems+%26+Mobile+Architect;Building+Hard-Real-Time+Drone+Systems+%F0%9F%9A%81;C%2B%2B+%7C+Flutter+%7C+Algorithms+%E2%9A%A1" alt="Typing SVG" />
 </a>
 
 <br/>
 
 <!-- Profile Views Counter -->
-<img src="https://komarev.com/ghpvc/?username=Isobek&color=2196F3&style=flat-square&label=Profile+Views" alt="Profile views" />
+<img src="https://komarev.com/ghpvc/?username=Vafoyev&color=2196F3&style=flat-square&label=Profile+Views" alt="Profile views" />
 
 <br/><br/>
 
@@ -149,20 +149,20 @@ Enterprise SDK integration platform
 <table border="0" width="100%">
 <tr>
 <td width="50%" align="center">
-<a href="https://github.com/Isobek">
-<img src="https://github-readme-stats.vercel.app/api?username=Isobek&show_icons=true&theme=radical&hide_border=true&title_color=2196F3&text_color=b0b0b0&icon_color=2196F3&bg_color=0d1117" alt="GitHub Stats" />
+<a href="https://github.com/Vafoyev">
+<img src="https://github-readme-stats.vercel.app/api?username=Vafoyev&show_icons=true&theme=radical&hide_border=true&title_color=2196F3&text_color=b0b0b0&icon_color=2196F3&bg_color=0d1117" alt="GitHub Stats" />
 </a>
 </td>
 <td width="50%" align="center">
-<a href="https://github.com/Isobek">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Isobek&theme=radical&hide_border=true&background=0d1117&stroke=2196F3&ring=2196F3&fire=FF6D00&currStreakLabel=2196F3" alt="GitHub Streak" />
+<a href="https://github.com/Vafoyev">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Vafoyev&theme=radical&hide_border=true&background=0d1117&stroke=2196F3&ring=2196F3&fire=FF6D00&currStreakLabel=2196F3" alt="GitHub Streak" />
 </a>
 </td>
 </tr>
 <tr>
 <td colspan="2" align="center">
-<a href="https://github.com/Isobek">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Isobek&layout=compact&theme=radical&hide_border=true&title_color=2196F3&text_color=b0b0b0&bg_color=0d1117" alt="Top Languages" />
+<a href="https://github.com/Vafoyev">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vafoyev&layout=compact&theme=radical&hide_border=true&title_color=2196F3&text_color=b0b0b0&bg_color=0d1117" alt="Top Languages" />
 </a>
 </td>
 </tr>
