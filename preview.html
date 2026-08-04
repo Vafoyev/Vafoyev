@@ -1,21 +1,63 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Preview</title>
+<title>README preview</title>
 <style>
-  body { margin:0; font-family: system-ui, sans-serif; }
-  section { padding: 24px; }
-  .dark { background:#0d1117; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  section { padding: 28px 24px 44px; }
+  .dark  { background:#0d1117; }
   .light { background:#ffffff; }
-  h3 { color:#888; font:600 13px/1 monospace; margin:0 0 12px; }
-  img { display:block; width:1200px; max-width:100%; margin-bottom:20px; }
+  .wrap { max-width: 1200px; margin: 0 auto; }
+  h3 { font:700 12px/1 ui-monospace, monospace; letter-spacing:2px; margin:0 0 18px; }
+  .dark h3  { color:#8b949e; }
+  .light h3 { color:#57606a; }
+  img { display:block; max-width:100%; }
+  .full { width:100%; margin-bottom:16px; }
+  .row { display:flex; gap:2%; margin-bottom:16px; }
+  .row img { width:49%; }
+  .note { border:2px dashed; border-radius:12px; padding:26px; text-align:center;
+          font:600 13px/1.6 ui-monospace, monospace; margin-bottom:16px; }
+  .dark .note  { border-color:#22304D; color:#64748B; }
+  .light .note { border-color:#CBD5E1; color:#64748B; }
+  .badges { text-align:center; margin-top:18px; }
+  .badges img { display:inline-block; margin:0 5px; }
 </style>
+
 <section class="dark">
-  <h3>DARK</h3>
-  <img src="dark.svg">
-  <img src="projects-dark.svg">
+<div class="wrap">
+  <h3>DARK THEME</h3>
+
+  <img class="full" src="dark.svg" alt="hero">
+
+  <img class="full" src="stats-dark.svg" alt="stats">
+
+  <div class="note">
+    SNAKE ANIMATION<br>
+    push qilib, Actions ishga tushgandan keyin paydo bo'ladi<br>
+    raw.githubusercontent.com/Vafoyev/Vafoyev/output/snake-dark.svg
+  </div>
+
+  <img class="full" src="projects-dark.svg" alt="projects">
+
+  <div class="badges">
+    <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=22D3EE&labelColor=0A101F">
+    <img src="https://img.shields.io/badge/Telegram-0A101F?style=for-the-badge&logo=telegram&logoColor=A78BFA&labelColor=0A101F">
+    <img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=F8FAFC&labelColor=0A101F">
+    <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F">
+    <br><br>
+    <img src="https://komarev.com/ghpvc/?username=Vafoyev&color=22D3EE&style=for-the-badge&label=PROFILE+VIEWS">
+    <img src="https://img.shields.io/github/followers/Vafoyev?style=for-the-badge&color=22D3EE&labelColor=0A101F&logo=github">
+  </div>
+</div>
 </section>
+
 <section class="light">
-  <h3>LIGHT</h3>
-  <img src="light.svg">
-  <img src="projects-light.svg">
+<div class="wrap">
+  <h3>LIGHT THEME</h3>
+
+  <img class="full" src="light.svg" alt="hero">
+
+  <img class="full" src="stats-light.svg" alt="stats">
+
+  <img class="full" src="projects-light.svg" alt="projects">
+</div>
 </section>
