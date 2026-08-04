@@ -1,4 +1,7 @@
-name: Refresh GitHub Stats Card
+name: Refresh Stats & Snake
+
+# Stats kartasi ham, ilon animatsiyasi ham shu repodagi Python skriptlar bilan
+# yasaladi — tashqi action yoki servisga bog'liq emas.
 
 on:
   schedule:
@@ -9,6 +12,7 @@ on:
       - main
     paths:
       - make_stats.py
+      - make_snake.py
       - .github/workflows/stats.yml
 
 jobs:
@@ -28,14 +32,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python make_stats.py
 
+      - name: Rebuild snake animation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python make_snake.py
+
       - name: Commit if changed
         run: |
-          if [ -n "$(git status --porcelain stats-dark.svg stats-light.svg)" ]; then
+          files="stats-dark.svg stats-light.svg snake-dark.svg snake-light.svg"
+          if [ -n "$(git status --porcelain $files)" ]; then
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add stats-dark.svg stats-light.svg
-            git commit -m "chore: refresh GitHub stats card"
+            git add $files
+            git commit -m "chore: refresh stats card and snake animation"
             git push
           else
-            echo "Stats unchanged."
+            echo "Nothing changed."
           fi
