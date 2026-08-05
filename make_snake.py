@@ -6,9 +6,13 @@ Nega o'zimizniki?  Platane/snk GitHub Action'ini ishlatib bo'lmadi — akkaunt
 billing sababli bloklangani uchun Actions umuman ishga tushmaydi. Bu skript
 hissa kalendarini o'zi oladi va SVG'ni to'g'ridan-to'g'ri chizadi.
 
-Muhim dizayn qarori: ilon animatsiyasi *ustiga qo'shimcha* qatlam. SVG'ning
-boshlang'ich holati — to'liq rangli heatmap. Agar render qiluvchi SMIL'ni
-ishlatmasa, oddiy hissa jadvali ko'rinadi, bo'sh quti emas.
+Animatsiya SMIL emas, CSS @keyframes bilan yozilgan. GitHub README'dagi SVG
+<img> sifatida yuklanadi va bu holatda SMIL (<animate>, <animateMotion>)
+0-kadrda qotib qoladi — tekshirildi, ilon joyidan qimirlamadi. CSS
+animatsiyalari esa ishlaydi; Platane/snk ham aynan shu sababli CSS ishlatadi.
+
+Boshlang'ich holat baribir to'liq rangli heatmap: animatsiya umuman
+ishlamasa ham bo'sh quti emas, oddiy hissa jadvali ko'rinadi.
 
 Ishlatish: python make_snake.py
 Chiqadi:   snake-dark.svg  snake-light.svg
@@ -97,43 +101,61 @@ def build(theme, days):
     o.write('<text x="%d" y="38" font-family="%s" font-size="11" fill="%s" text-anchor="end">'
             '@%s</text>' % (PAD + CW, MONO, p["dim"], USER))
 
+    # ── CSS ──
+    empty = p["heat"][0]
+    css = io.StringIO()
+
+    # Ilon yo'li: barcha bo'g'inlar bitta @keyframes'dan foydalanadi, faqat
+    # animation-delay bilan bir-biridan orqada qoladi.
+    css.write("@keyframes slither{")
+    for i, (col, row) in enumerate(path):
+        pct = 100.0 * i / (steps - 1)
+        css.write("%.4f%%{transform:translate(%.2fpx,%.2fpx)}"
+                  % (pct, cx(col) + cell / 2, cy(row) + cell / 2))
+    css.write("}")
+    css.write(".sn{animation:slither %.2fs linear infinite}" % CYCLE)
+
+    # Har bir daraja uchun alohida "yeyilish" keyframe'i. Katak o'z vaqtida
+    # o'chishi uchun animation-delay ishlatiladi (pastda, har katakda).
+    flip = 1.0                                    # foizda: qachon rang o'chadi
+    for lv in range(1, 5):
+        css.write("@keyframes eat%d{0%%{fill:%s}%.2f%%{fill:%s}%.2f%%{fill:%s}100%%{fill:%s}}"
+                  % (lv, p["heat"][lv], flip * 0.8, p["heat"][lv], flip, empty, empty))
+        css.write(".e%d{animation:eat%d %.2fs linear infinite}" % (lv, lv, CYCLE))
+
+    o.write('<style>%s</style>' % css.getvalue())
+
     # ── kataklar ──
     # Boshlang'ich fill = o'z rangi, shuning uchun animatsiyasiz ham to'liq ko'rinadi.
-    empty = p["heat"][0]
     for i, (col, row) in enumerate(path):
         info = cells.get((col, row))
         if info is None:
             continue
         _, n, level = info
-        base = p["heat"][min(level, 4)]
-        o.write('<rect x="%.2f" y="%.2f" width="%.2f" height="%.2f" rx="3.5" fill="%s">'
-                % (cx(col), cy(row), cell, cell, base))
-        if level > 0:
-            t = i / float(steps)
-            t2 = min(1.0, t + 0.004)
-            o.write('<animate attributeName="fill" values="%s;%s;%s;%s" '
-                    'keyTimes="0;%.5f;%.5f;1" dur="%.2fs" repeatCount="indefinite"/>'
-                    % (base, base, empty, empty, t, t2, CYCLE))
-        o.write('</rect>')
+        lv = min(level, 4)
+        base = p["heat"][lv]
+        attrs = ''
+        if lv > 0:
+            # katak ilon yetib kelgan paytda o'chsin
+            delay = (i / float(steps)) * CYCLE - (flip / 100.0) * CYCLE
+            attrs = ' class="e%d" style="animation-delay:%.3fs"' % (lv, delay)
+        o.write('<rect x="%.2f" y="%.2f" width="%.2f" height="%.2f" rx="3.5" fill="%s"%s/>'
+                % (cx(col), cy(row), cell, cell, base, attrs))
 
     # ── ilon ──
-    # Bitta yo'l bo'ylab bir nechta bo'g'in; har biri kechikish bilan ergashadi.
-    pts = " ".join("%s%.2f,%.2f" % ("M" if k == 0 else "L",
-                                    cx(c) + cell / 2, cy(r) + cell / 2)
-                   for k, (c, r) in enumerate(path))
-    o.write('<path id="snakepath" d="%s" fill="none" stroke="none"/>' % pts)
-
+    # transform atributi — animatsiyasiz holat uchun: ilon panjara boshida turadi,
+    # burchakka tushib qolmaydi. CSS ishlaganda uni keyframes bekor qiladi.
+    sc, sr = path[0]
+    home = (cx(sc) + cell / 2, cy(sr) + cell / 2)
     for k in range(SNAKE_LEN):
         size = cell * (1.0 - 0.07 * k)
         off = size / 2.0
         color = snake_cols[min(k, len(snake_cols) - 1)]
-        o.write('<g>'
+        o.write('<g class="sn" transform="translate(%.2f,%.2f)" style="animation-delay:%.4fs">'
                 '<rect x="%.2f" y="%.2f" width="%.2f" height="%.2f" rx="%.2f" fill="%s" '
-                'opacity="%.2f"/>'
-                '<animateMotion dur="%.2fs" repeatCount="indefinite" begin="%.4fs" '
-                'calcMode="linear"><mpath href="#snakepath"/></animateMotion>'
-                '</g>' % (-off, -off, size, size, size * 0.28, color,
-                          1.0 - 0.12 * k, CYCLE, k * step_dur))
+                'opacity="%.2f"/></g>'
+                % (home[0], home[1], k * step_dur,
+                   -off, -off, size, size, size * 0.28, color, 1.0 - 0.12 * k))
 
     o.write('</svg>')
     return o.getvalue()
